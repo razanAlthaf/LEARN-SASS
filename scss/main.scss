@@ -1,0 +1,60 @@
+$primary : aqua;
+$secondary : brown;
+$dark : blue;
+
+    // .main {
+    //     background-color: $primary;
+
+    //     .main-heading {
+    //         font-size: 2em;
+    //     }
+
+    //     .main-paragraph {
+    //         font-size: 1.4em;
+    //     }
+    // }
+
+    // .main, footer {
+    //     h1, p {
+    //         letter-spacing: 2px;
+    //     }
+    // }
+
+    // &
+    // parent selector
+
+    // .main {
+    //     .container & {
+    //         background-color: aqua;
+    //     }
+    //     .main-heading {
+    //         font-size: 2em;
+    //     }
+    //     &:hover {
+    //         background-color: salmon;
+    //     }
+    // }
+
+    .main {
+        .container & {
+            background-color: aqua;
+        }
+        & &-heading {
+            font-size: 2em;
+        }
+        & &-paragraph {
+            font-size: 1.4em;
+        }
+        &:hover {
+            background-color: salmon;
+        }
+    }
+
+    .footer {
+        & &-heading {
+            font-size: 2em;
+        }
+        & &-paragraph {
+            font-size: 1.4em;
+        }
+    }
